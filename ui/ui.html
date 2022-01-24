@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeskCARHUD</title>
+    <style>
+        @import url(https://pro.fontawesome.com/releases/v5.15.2/css/all.css);
+
+        @font-face {
+            font-family: font1;
+            src: url(fonts/font.ttf);
+        }
+        html,
+            body {
+                user-select: none;
+            }
+        #kmhdiv {
+            position: fixed;
+            bottom: 2.5vh;
+            left:40%;
+            background-color:black;
+            border-radius: 1.5vh;
+            height:5vh;
+            min-width: 17.5vh;
+            transform:translate(-50%,-50%);
+        }
+        #kmhdiv i{
+            color:white;
+            position: fixed;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left:20%;
+            font-size: 3.75vh;
+        }
+        #kmhdiv #kmhtexto {
+            color: white;
+            position: fixed;
+            top:50%;
+            transform: translate(-50%,-50%);
+            left:85%;
+            min-width: 100%;
+            font-family: font1;
+            font-weight: bold;
+        }
+        #fueldiv {
+            position: fixed;
+            bottom: 2.5vh;
+            left:60%;
+            background-color:black;
+            border-radius: 1.5vh;
+            height:5vh;
+            min-width: 12.5vh;
+            transform:translate(-50%,-50%);
+        }
+        #fueldiv i{
+            color:white;
+            position: fixed;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left:20%;
+            font-size: 3.5vh;
+        }
+        #fueldiv #fueltexto {
+            color: white;
+            position: fixed;
+            top:50%;
+            transform: translate(-50%,-50%);
+            left:95%;
+            min-width: 100%;
+            font-family: font1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="carhud" id="carhud">
+        <div id="kmhdiv" class="kmhdiv">
+            <i class="far fa-tachometer-slowest"></i>
+            <span id="kmhtexto" class="kmhtexto">999 KM/H</span>
+        </div>
+        <div id="fueldiv" class="fueldiv">
+            <i class="far fa-gas-pump"></i>
+            <span id="fueltexto" class="fueltexto">100 L</span>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
