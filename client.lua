@@ -1,4 +1,9 @@
 SendNotification = function(txt)
+TriggerEvent('chat:addMessage', {
+  color = { 255, 0, 0},
+  multiline = true,
+  args = {"ERROR", txt}
+})
 
 end
 local focus = false;
