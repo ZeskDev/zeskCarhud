@@ -4,7 +4,7 @@ client_script 'client.lua'
 ui_page 'ui/ui.html'
 files {
     'ui/*.html',
-    'ui/fonts/*.ttf',
+    'ui/*.ttf',
     'ui/*.js'
 }
 author 'Zesk#1801'
